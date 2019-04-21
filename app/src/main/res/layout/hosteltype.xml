@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hostel Type"
+        android:textColor="@color/second"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/hosteltype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/boyhostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Boy's hostel"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/girlhostel"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Girl's Hostel"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Room Type"
+        android:textSize="30sp"
+        android:layout_below="@id/hosteltype"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/second"/>
+
+    <RadioGroup
+        android:id="@+id/Roomtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="15dp"
+        >
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Single Room"
+            />
+
+        <RadioButton
+            android:id="@+id/double1"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DoubleRoom"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_below="@id/Roomtype"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/first"
+        android:padding="10dp"
+        android:background="@drawable/buttonshape"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignBaseline="@+id/back"
+        android:id="@+id/next"
+        android:text="next"
+        android:textColor="@color/first"
+        android:padding="10dp"
+        android:background="@drawable/buttonshape"
+        />
+
+
+
+</RelativeLayout>

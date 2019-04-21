@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logoImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_margin="40dp"
+                android:src="@drawable/signup" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoImage1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/namee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:hint=" Name"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/coerid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/coeride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:hint=" COER ID"
+                    android:inputType="number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coerid"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/branche"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_adjust_black_24dp"
+                    android:hint=" Branch"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/branch"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                app:passwordToggleEnabled="true"
+                app:counterMaxLength="8"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passworde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:hint=" Password"
+                    android:inputType="textPassword"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/emaile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:hint=" E-Mail"
+                    android:inputType="textEmailAddress"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/phonee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:hint=" Phone"
+                    android:inputType="number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:textColor="@color/first"
+                android:background="@drawable/buttonshape"
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Sign Up"
+                android:gravity="center"
+                android:layout_below="@+id/phone"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

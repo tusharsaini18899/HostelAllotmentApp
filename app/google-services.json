@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107942657256",
+    "firebase_url": "https://hostel-4ce1a.firebaseio.com",
+    "project_id": "hostel-4ce1a",
+    "storage_bucket": "hostel-4ce1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107942657256:android:4e315d53875a1916",
+        "android_client_info": {
+          "package_name": "com.tusharsaini.app.allotment.hostel.hostelallotment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107942657256-0f31tct6ev13h1q9h1132micf12fi58r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tusharsaini.app.allotment.hostel.hostelallotment",
+            "certificate_hash": "8b7f565476ce8e18e8d4dbbc623738b68aa6c136"
+          }
+        },
+        {
+          "client_id": "107942657256-stqbftretqc2ppk1t6tiediage7hvqnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGXc80ToHNGBChjiaGWNGkiOcHS0kj3yU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107942657256-stqbftretqc2ppk1t6tiediage7hvqnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
